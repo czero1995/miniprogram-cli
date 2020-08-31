@@ -1,0 +1,9 @@
+*.map
+.DS_Store
+.vscode/
+.idea/
+*.css
+*.wxss
+node_modules
+/app/assets/img
+/app/analyzer

@@ -1,0 +1,50 @@
+{
+	"name": "miniprogram-cli",
+	"version": "1.0.0",
+	"description": "miniprogram-cli",
+	"author": "czero1995",
+	"main": "webpack.config.js",
+	"scripts": {
+		"dev": "webpack",
+		"img": "webpack --config webpack.compress",
+		"create": "node ./cli",
+		"test:watch": "jest --watch",
+		"test": "jest --coverage",
+		"precommit": "lint-staged --allow-empty"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,wxss}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-modules-commonjs": "^7.10.4",
+		"@babel/preset-env": "^7.11.0",
+		"babel-eslint": "^10.1.0",
+		"chalk": "^4.1.0",
+		"css-loader": "^3.5.3",
+		"eslint": "^6.8.0",
+		"figlet": "^1.5.0",
+		"file-loader": "^6.0.0",
+		"fs": "^0.0.1-security",
+		"globby": "^9.2.0",
+		"husky": "^4.2.5",
+		"image-webpack-loader": "^6.0.0",
+		"jest": "^26.4.2",
+		"lint-staged": "^10.2.7",
+		"mini-css-extract-plugin": "^0.4.5",
+		"node-sass": "^4.14.1",
+		"prettier": "^2.0.5",
+		"sass-loader": "^7.3.1",
+		"url-loader": "^4.1.0",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.3.11",
+		"webpack-fix-style-only-entries": "^0.2.1"
+	}
+}

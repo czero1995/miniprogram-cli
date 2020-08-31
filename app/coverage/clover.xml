@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1598855171208" clover="3.2.0">
+  <project timestamp="1598855171208" name="All files">
+    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
+    <file name="util.js" path="/Users/mac/Documents/github/miniprogram-cli/app/utils/util.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
